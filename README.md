@@ -15,3 +15,10 @@ Put the public key in .ssh/authorized_keys2
 Change the permissions of .ssh to 700
 
 Change the permissions of .ssh/authorized_keys2 to 640
+
+
+# Using SSH keyfile with Netbeans for remote development
+## regenerate your key (and register the public key again to the remote server authorized_keys) using the old PEM format:
+```bash
+ssh-keygen -m PEM -P "" -t rsa
+```
